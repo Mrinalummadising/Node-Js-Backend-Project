@@ -1,10 +1,13 @@
-const express = require('express');
-const { open } = require('sqlite');
-const sqlite3 = require('sqlite3');
+import express from 'express';
+import { open } from 'sqlite';
+import sqlite3 from 'sqlite3';
+import path from 'path';
+import { request } from 'http';
 
-const path = require('path');
-const { request } = require('http');
+import { fileURLToPath } from 'url';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const databasePath = path.join(__dirname, "bloggingDatabase.db");
 
