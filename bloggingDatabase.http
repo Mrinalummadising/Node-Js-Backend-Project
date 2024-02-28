@@ -1,0 +1,110 @@
+### getting the users data
+GET http://localhost:3000/users/1
+Content-Type: application/json
+###
+
+### Retrive specific user ###
+GET http://localhost:3000/users/4
+###
+
+
+### create new users data
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "username": "chinna",
+    "email": "chinna@gmail.com"
+}
+
+### Update an existing user ###
+PUT http://localhost:3000/users/:id
+Content-Type: application/json
+
+{
+    "username": "updated_new_user",
+    "email": "updated_new_user@example.com"
+}
+### Delete all users ###
+DELETE http://localhost:3000/users
+
+
+
+
+
+
+### getting the blogs data
+GET http://localhost:3000/blogs/1
+Content-Type: application/json
+###
+
+### Retrieve a specific blog ###
+GET http://localhost:3000/blogs/6
+
+
+### Update an existing blog ###
+PUT http://localhost:3000/blogs/:id
+Content-Type: application/json
+
+{
+    "title": "Updated Blog",
+    "content": "This is the updated content of the blogs."
+}
+
+### Create a new blog ###
+POST http://localhost:3000/blogs
+Content-Type: application/json
+
+{
+    "title": "Alice's Adventures in Wonderland: By Lewis Carroll",
+    "content": "it's about an adventure of alice in wonderland",
+    "author_id": 15
+}
+
+### Delete all blogs ###
+DELETE http://localhost:3000/blogs
+
+
+
+
+
+
+
+
+### getting the users data
+GET http://localhost:3000/comments/9
+Content-Type: application/json
+###
+
+### Retrieve a specific blog ###
+GET http://localhost:3000/comments/10
+
+
+### Update an existing blog ###
+PUT http://localhost:3000/comments/:id
+Content-Type: application/json
+
+{
+    "title": "Updated comments",
+    "content": "This is the updated comments."
+}
+
+### Create a new comment ###
+POST http://localhost:3000/comments
+Content-Type: application/json
+
+{
+    "content": "This post a real deeply regards. It's a gentle nudge to appreciate the strange things in life.!",
+    "author_id": 17,
+    "blog_id": 28
+}
+
+
+### Retrieve all blogs/comments by a user ###
+GET http://localhost:3000/users/:id/blogs
+
+### Retrieve all comments by a user ###
+GET http://localhost:3000/users/:id/comments
+
+### Delete all comments ###
+DELETE http://localhost:3000/comments
