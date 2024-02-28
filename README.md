@@ -1,4 +1,4 @@
-<h1>Media NV assessment</h1>
+<h1>Media NV backend assessment</h1>
 <p> API
 Introduction
 This is a RESTful API for a blogging platform built using Node.js, Express.js, and MongoDB.</p>
